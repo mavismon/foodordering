@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Welcome to Good Food Restaurant</title>
+    <link rel="stylesheet" type="text/css" href="order.css"/>
+    <style>
+        body {
+            background-color: #CABEC1;
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            border-radius: 5px;
+            padding: 20px;
+            background-color: #CABEC1;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        
+        .text-center {
+            text-align: center;
+            font-family: sans-serif;
+        }
+        
+        .box-3 {
+            width: calc(33.3333% - 20px);
+            float: left;
+            margin: 10px;
+            position: relative;
+        }
+        
+        .img-responsive {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .img-curve {
+            border-radius: 5px;
+        }
+        
+        .float-text {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            padding-bottom: 1%;
+        }
+        
+        .float-container:hover .float-text {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        
+        .text-white {
+            color:#CABEC1;
+        }
+        
+        .clearfix {
+            clear: both;
+        }
+
+        .location-contact {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: 30px;
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Adjusted alignment */
+            margin-right: 10px;
+        }
+
+        .location-img {
+            width: 130px;
+            height: 130px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 50px;
+            margin-top: 39px;
+            margin-left: 80px;
+            
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+            flex-grow: 1; /* Added to make contact and email occupy remaining space */
+        }
+
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            flex-grow: 1; /* Added to evenly distribute contact and email */
+        }
+
+        .contact {
+            width: 130px;
+            height: 130px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 100px;
+            margin-right: 100px;
+          
+        }
+
+        .email {
+            width: 130px;
+            height: 130px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .location-text {
+            font-size: 16px;
+            text-align: left; /* Adjusted alignment */
+            margin-top: auto;
+            margin-left: 10px;
+            font-style: italic;
+            font-family: sans-serif;
+            font-size: 16px;
+            color:#7D3A2A;
+        }
+
+        .contact-text {
+            margin: 0;
+            text-align: center;
+            margin-left: 90px;
+            margin-bottom: 1px;
+            font-style: italic;
+            font-family: sans-serif;
+            font-size: 16px;
+            margin-right: 100px;
+            color:#7D3A2A;
+        }
+
+        .email-text {
+            margin: 0;
+            text-align: right; /* Adjusted alignment */
+            font-style: italic;
+            font-family: sans-serif;
+            font-size: 16px;
+            color:#7D3A2A;
+
+        }
+
+        .contactus
+        {
+            max-width: 1200px;
+            margin: 0 auto;
+            border-radius: 5px;
+            padding: 20px;
+            background-color: #CABEC1;
+         
+        }
+
+        .authoritem
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .authortext
+        {
+            margin: 0;
+            text-align: center;
+            margin-left: 75px;
+            margin-bottom: 10px;
+            font-style: italic;
+            font-family: sans-serif;
+            font-size: 16px;
+            color:#7D3A2A;
+        }
+
+        .author
+        {
+            width: 140px;
+            height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 80px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="#" title="Logo" class="image-link">
+                <img src="image/logo.png" alt="Cafe Logo" class="img-responsive">
+            </a>
+            <div class="menu-items">
+                <a href="home.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="UPView.php">Food</a>
+                <a href="Order.php">Order</a>
+                <a href="UReview.php">Review</a>
+                <a href="login.php">Admin Log In</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="text-center">Explore Restaurant Design</h2>
+
+        <div class="box-3 float-container">
+            <img src="image/outdoordesign.jpg" alt="outdoordesign" class="img-responsive img-curve">
+            <h3 class="float-text text-white">Outdoor Design</h3>
+        </div>
+
+        <div class="box-3 float-container">
+            <img src="image/interiordesign.jpg" alt="interiordesign" class="img-responsive img-curve">
+            <h3 class="float-text text-white">Interior Design</h3>
+        </div>
+
+        <div class="box-3 float-container">
+            <img src="image/interiordesign1.jpg" alt="interiordesign1" class="img-responsive img-curve">
+            <h3 class="float-text text-white">Interior Design</h3>
+        </div>
+
+        <div class="clearfix"></div>
+
+
+        <div class="contactus">
+            <h2 class="text-center">More information about Restaurant</h2>
+        </div>
+      
+
+
+
+        <div class="location-contact">
+            <div class="image-container">
+                <img src="image/location.png" alt="location" class="location-img">
+              
+                <p class="location-text">Location: 123 King's Mary Street, London</p>
+            </div>
+        
+            <div class="contact-info">
+                <div class="contact-item">
+                    <img src="image/phone.png" alt="phone" class="contact">
+                    <p class="contact-text">Hotline: +123-456-7890</p>
+                </div>
+        
+                <div class="contact-item">
+                    <img src="image/email.png" alt="email" class="email">
+                    <p class="email-text">Email: goodfood@gmail.com</p>
+                </div>
+
+                <div class="authoritem">
+                    <img src="image/developer.png" alt="developer" class="author">
+                    <p class="authortext">Written by-Hsu Yee Mon</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
